@@ -1,0 +1,25 @@
+/*footer*/
+footer {
+    background-color: #398175;
+    color: #F8DD6C;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    z-index: 1000;
+    
+    footer div ul {
+        display: inline;
+    }    
+
+}
+.whatsapp {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    top: 100;
+    right: 0;
+    z-index: 999;
+}

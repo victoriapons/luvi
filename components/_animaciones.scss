@@ -1,0 +1,35 @@
+/*agregando animaciones*/
+.cajas {
+    transition: all 2s;
+}
+.cajas:hover{
+    transform: scale(0.9);
+    -moz-transform: scale(0.9) ;
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+}
+input {
+    transition: all 1s;
+}
+input:focus {
+    background-color: #F8DD6C ;
+}
+.animacion:hover {
+    animation: cambioColor 3s;
+}
+@keyframes cambioColor{
+    0%{
+        color: white;
+    }
+    25%{
+        color: #398175;
+    }
+    50%{
+        color: #F8DD6C;
+    }
+    100%{
+        color: white;
+    }
+
+}

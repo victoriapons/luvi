@@ -1,0 +1,19 @@
+{
+  "name": "luvi-victoriapons-copia---copia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victoriapons/luvi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victoriapons/luvi/issues"
+  },
+  "homepage": "https://github.com/victoriapons/luvi#readme"
+}

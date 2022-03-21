@@ -1,0 +1,503 @@
+@charset "UTF-8";
+/*footer*/
+footer {
+  background-color: #398175;
+  color: #F8DD6C;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+footer footer div ul {
+  display: inline;
+}
+
+.whatsapp {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  top: 100;
+  right: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0.3rem;
+}
+
+.header {
+  background-color: #398175 !important;
+  text-align: center;
+}
+
+.fondoim-header {
+  background-image: url(../img/Sin-título-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/*navbar*/
+.transparente {
+  background-color: transparent !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: right !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.active {
+  color: #F8DD6C !important;
+}
+
+/*mobile*/
+@media (max-width: 576px) and (max-width: 768px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1rem, 1rem, repeat(6, 1fr), 3rem;
+    grid-template-areas: "header" "main" "foto1" "foto2" "foto3" "foto4" "foto5" "video" "footer";
+    justify-items: stretch;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+
+  .gridIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1rem, 1rem, 3rem;
+    grid-template-areas: "mainUno" "mainDos" "footer";
+  }
+
+  .divPaddindg {
+    padding: 1rem;
+  }
+
+  .fondoim-header {
+    background-image: url(../img/Sin-título-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .gridContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem, 1rem, 2rem, 3rem;
+    grid-template-areas: "header" "main" "formulario" "footer";
+  }
+
+  #formulario {
+    display: block;
+  }
+
+  .gridNosotras {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem, 1rem, repeat(3, 3rem);
+    grid-template-areas: "header" "main" "nosotras" "marcas" "footer";
+  }
+
+  .containerRow {
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+  }
+
+  .containerRowTwo {
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+  }
+
+  #info {
+    text-align: center;
+  }
+
+  #marcas {
+    background-color: #F8DD6C;
+    padding: 1rem;
+  }
+
+  #img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .gridServicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem, 1rem, 3rem, 1rem, 3rem;
+    grid-template-areas: "header" "main" "servicios" "info" "footer";
+  }
+}
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1rem, 1rem, repeat(6, 1fr), 2rem;
+    grid-template-areas: "header" "main" "foto1" "foto2" "foto3" "foto4" "foto5" "video" "footer";
+    justify-items: stretch;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .gridIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1rem, 1rem, 2rem;
+    grid-template-areas: "mainUno" "mainDos" "footer";
+  }
+
+  .divPaddindg {
+    padding: 1rem;
+  }
+
+  .gridContacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem, 1rem, 2rem, 3rem;
+    grid-template-areas: "header" "main" "formulario" "footer";
+  }
+
+  .gridNosotras {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem, 1rem, repeat(3, 3rem);
+    grid-template-areas: "header" "main" "nosotras" "marcas" "footer";
+  }
+
+  .containerRow {
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+  }
+
+  .containerRowTwo {
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+  }
+
+  #info {
+    text-align: center;
+  }
+
+  #marcas {
+    background-color: #F8DD6C;
+    padding: 1rem;
+  }
+
+  #img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .gridServicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem, 1rem, 3rem, 1rem, 3rem;
+    grid-template-areas: "header" "main" "servicios" "info" "footer";
+  }
+}
+/*agregando animaciones*/
+.cajas {
+  transition: all 2s;
+}
+
+.cajas:hover {
+  transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+}
+
+input {
+  transition: all 1s;
+}
+
+input:focus {
+  background-color: #F8DD6C;
+}
+
+.animacion:hover {
+  animation: cambioColor 3s;
+}
+
+@keyframes cambioColor {
+  0% {
+    color: white;
+  }
+  25% {
+    color: #398175;
+  }
+  50% {
+    color: #F8DD6C;
+  }
+  100% {
+    color: white;
+  }
+}
+/*grilla portfolio*/
+#grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 2rem, 1rem, 1fr, 1fr, 1fr, 4rem;
+  grid-template-areas: "header header" "main main" "foto1 foto2" "foto3 foto4" "foto5 video" "footer footer";
+  justify-items: stretch;
+}
+
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+div#foto1 {
+  grid-area: foto1;
+}
+
+div#foto2 {
+  grid-area: foto2;
+}
+
+div#foto3 {
+  grid-area: foto3;
+}
+
+div#foto4 {
+  grid-area: foto4;
+}
+
+div#foto5 {
+  grid-area: foto5;
+}
+
+div#video {
+  grid-area: video;
+}
+
+#main {
+  grid-area: main;
+}
+
+#mainUno {
+  grid-area: mainUno;
+}
+
+#mainDos {
+  grid-area: mainDos;
+}
+
+#formulario {
+  grid-area: formulario;
+}
+
+#nosotras {
+  grid-area: nosotras;
+}
+
+#marcas {
+  grid-area: marcas;
+}
+
+section#info {
+  grid-area: info;
+}
+
+section#servicios {
+  grid-area: servicios;
+}
+
+/*grilla index*/
+.gridIndex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 4rem, 4rem;
+  grid-template-areas: "mainUno mainDos" "footer footer";
+}
+
+/*grilla contacto*/
+.gridContacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2rem, 1rem, 2rem, 3rem;
+  grid-template-areas: "header" "main" "formulario" "footer";
+}
+
+/*grilla nosotras*/
+.gridNosotras {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2rem, 1rem, repeat(3, 3rem);
+  grid-template-areas: "header" "main" "nosotras" "marcas" "footer";
+}
+
+/*grilla servicios*/
+.gridServicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2rem, 1rem, 3rem, 1rem, 3rem;
+  grid-template-areas: "header" "main" "servicios" "info" "footer";
+}
+
+/*flex*/
+.linea {
+  display: inline-block;
+}
+
+.textEspace {
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.font {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-align {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*margenes*/
+header {
+  padding: 3rem;
+}
+
+main {
+  padding: 4rem;
+}
+
+.divPaddindg {
+  padding: 2rem;
+}
+
+/*botones*/
+.botones {
+  border: 3px solid #398175;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #398175;
+}
+
+.botonMargin {
+  margin: 1rem;
+}
+
+/*tamaño img*/
+.imgSizeLogo {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.imageSize {
+  height: 100%;
+  width: 100%;
+}
+
+.imgSizeIconos {
+  width: 1rem;
+  height: 1rem;
+}
+
+/*ordenando cajas*/
+.containerRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.containerRowTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cajas {
+  width: 1fr;
+  height: 1fr;
+  text-align: center;
+  background-color: #F8DD6C;
+  margin: 3rem;
+  border-radius: 5%;
+  padding: 1rem;
+}
+
+/*formulario*/
+label {
+  width: 72px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+input {
+  background-color: #398175;
+  border-radius: 15px;
+  border-color: white;
+  color: white;
+  padding: 8px;
+  margin: 10px;
+}
+
+.formulario-back {
+  background-image: url(../img/Sin-título-4.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*colores*/
+.color-marca {
+  color: #398175;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #F8DD6C;
+}
+
+.color-amarillo {
+  color: #F8DD6C;
+}
+
+.backAmarillo {
+  background-color: #F8DD6C;
+}
+
+.formulario-blanco {
+  color: white;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*# sourceMappingURL=stye.css.map */
