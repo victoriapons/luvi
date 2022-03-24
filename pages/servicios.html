@@ -23,8 +23,8 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
           </li>
@@ -46,29 +46,48 @@
 </nav>
 </div>
 <!---inicia servicios-->
-  <div class="container align-item">
+  <div class="container-fluid">
     <div class="row">
       <div class="col col-lg-12 col-12 col-md-12 divPaddindg">
         <H2 class="color-marca text-align margenServicios">NUESTROS SERVICIOS</H2>
       </div>
-      <div class="cajas col col-12 col-md-4">
-        <img src="../img/social-media.png" alt="inconosocialmedia" class="imgSizeLogo">
-        <br/>
-        <h3>Social Media</h3>
-        <p>Establecemos una estética y estrategia a seguir en redes sociales.</p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col col-12 col-md-12 col-lg-4">
+        <div class="card cajas" style="width: 18rem;">
+          <img src="../img/social-media.png" class="card-img-top imgSizeLogo text-align" alt="social media">
+          <div class="card-body">
+            <h5 class="card-title">Social Media</h5>
+            <p class="card-text">Establecemos una estética y estrategia a seguir en redes sociales.</p>
+          </div>
+        </div>
       </div>
-      <div class="cajas col col-12 col-md-4">
-        <img src="../img/web-design.png" alt="iconoweb" class="imgSizeLogo">
-        <br/>
-        <h3>Web Design</h3>
-        <p>Ideamos la usabilidad y trayectoria del usuario, diseñamos y desarrollamos tu sitio web.</p> 
+
+      <div class="col col-12 col-md-12 col-lg-4">
+        <div class="card cajas" style="width: 18rem;">
+          <img src="../img/web-design.png" class="card-img-top imgSizeLogo" alt="diseño web">
+          <div class="card-body">
+            <h5 class="card-title">Web Design</h5>
+            <p class="card-text">Ideamos la usabilidad y trayectoria del usuario, diseñamos y desarrollamos tu sitio web.</p>
+          </div>
+        </div>
       </div>
-      <div class="cajas col col-12 col-md-4">
-        <img src="../img/curve.png" alt="iconobranding" class="imgSizeLogo">
-        <br/>
-        <h3>Branding</h3>
-        <p>Desarrollamos una identidad completa basada en los valores y fundamentos de la marca.</p>
+
+      <div class="col col-12 col-md-12 col-lg-4">
+        <div class="card cajas" style="width: 18rem;">
+          <img src="../img/curve.png" class="card-img-top imgSizeLogo" alt="diseño identidad">
+          <div class="card-body">
+            <h5 class="card-title">Branding</h5>
+            <p class="card-text">Desarrollamos una identidad completa basada en los valores y fundamentos de la marca.</p>
+          </div>
+        </div>
       </div>
+    </div>
+  </div> 
+  <div class="container-fluid">
+    <div class="row">
       <div class="text-align divPaddindg col col-lg-12 col-12 col-md-12">
         <h1 class="color-marca">Te ayudamos a progresar</h1>
         <p class="botonMargin">Hacemos prosperar el trabajo y los proyectos de cada persona, dándoles una identidad a su marca.</p>
@@ -84,7 +103,7 @@
             <a href="mailto:info@luviestudio.com.ar">info@luviestudio.com.ar</a>
         </div>
         <div class="linea">
-            <ul class="linea">
+            <ul class="linea no-margin">
                 <li class="linea"><a href="http://instagram.com"><img src="../img/87390.png" alt="instagram" class="imgSizeIconos"></a></li>
                 <li class="linea"><a href="http://facebook.com"><img src="../img/59439.png" alt="facebook" class="imgSizeIconos"></a></li>
                 <li class="linea">Español</li>
@@ -92,7 +111,6 @@
             </ul>
         </div>    
     </footer>
-</div>
 <!--js bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

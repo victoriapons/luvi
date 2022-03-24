@@ -1,5 +1,6 @@
 /*footer*/
 footer {
+    position: relative;
     background-color: #398175;
     color: #F8DD6C;
     padding: 20px;
@@ -7,7 +8,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
-    z-index: 1000 !important;
+    z-index: 1000;
     
     footer div ul {
         display: inline;
@@ -23,5 +24,5 @@ footer {
     bottom: 0;
     top: 100;
     right: 0;
-    z-index: 999 !important;
+    z-index: 999;
 }
