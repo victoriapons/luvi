@@ -8,10 +8,11 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
-  z-index: 1000;
+  z-index: 1000 !important;
 }
 footer footer div ul {
   display: inline;
+  margin: 0px !important;
 }
 
 .whatsapp {
@@ -21,7 +22,7 @@ footer footer div ul {
   bottom: 0;
   top: 100;
   right: 0;
-  z-index: 999;
+  z-index: 999 !important;
 }
 
 header nav ul li {
