@@ -7,11 +7,13 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
-    z-index: 1000;
+    z-index: 1000 !important;
     
     footer div ul {
         display: inline;
+        margin: 0px !important;
     }    
+    
 
 }
 .whatsapp {
@@ -21,5 +23,5 @@ footer {
     bottom: 0;
     top: 100;
     right: 0;
-    z-index: 999;
+    z-index: 999 !important;
 }
