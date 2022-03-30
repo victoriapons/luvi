@@ -1,14 +1,17 @@
 @charset "UTF-8";
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 /*footer*/
 footer {
   position: relative;
   background-color: #398175;
   color: #F8DD6C;
   padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: end;
   z-index: 1000;
 }
 footer footer div ul {
@@ -21,8 +24,9 @@ footer footer div ul {
   width: 50px;
   height: 50px;
   bottom: 0;
-  top: 100;
+  top: 90%;
   right: 0;
+  left: 93%;
   z-index: 999;
 }
 
@@ -130,6 +134,11 @@ ul {
   padding: 4rem;
 }
 
+.divMargin {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .container {
   padding: 0% !important;
   margin: 0% !important;
@@ -177,7 +186,7 @@ ul {
 }
 
 .cajas {
-  height: 20rem;
+  height: 21rem;
   text-align: center !important;
   background-color: #F8DD6C;
   border-radius: 5%;
@@ -251,6 +260,50 @@ a:hover {
   display: none;
 }
 
+/*select*/
+p::selection {
+  background-color: #F8DD6C;
+}
+
+a::selection {
+  background-color: #F8DD6C;
+}
+
+h1::selection {
+  background-color: #F8DD6C;
+}
+
+h2::selection {
+  background-color: #F8DD6C;
+}
+
+h3::selection {
+  background-color: #F8DD6C;
+}
+
+h4::selection {
+  background-color: #F8DD6C;
+}
+
+h5::selection {
+  background-color: #F8DD6C;
+}
+
+img::selection {
+  background-color: #F8DD6C;
+}
+
+label::selection {
+  background-color: #F8DD6C;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -262,7 +315,7 @@ a:hover {
 }
 
 /*mobile*/
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 0) and (max-width: 768px) {
   .grid {
     justify-items: stretch;
   }
@@ -309,8 +362,19 @@ a:hover {
 
   .marcasMobile {
     display: block;
-    width: fit-content;
+    width: 90%;
     height: fit-content;
+  }
+
+  .whatsapp {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    top: 70%;
+    right: 0;
+    left: 85%;
+    z-index: 999;
   }
 }
 /*tablet*/
@@ -340,6 +404,17 @@ a:hover {
 
   .marcasMobile {
     display: none;
+  }
+
+  .whatsapp {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    top: 75%;
+    right: 0;
+    left: 88%;
+    z-index: 999;
   }
 }
 

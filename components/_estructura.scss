@@ -16,6 +16,10 @@ ul {
 .divPaddindg {
     padding: 4rem;
 }
+.divMargin {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 .container {
     padding: 0% !important;
     margin: 0% !important;
@@ -55,7 +59,7 @@ ul {
     justify-content: space-between;    
 }
 .cajas {
-    height: 20rem;
+    height: 21rem;
     text-align: center !important;
     background-color: #F8DD6C;
     border-radius: 5%;
@@ -117,4 +121,32 @@ a:hover {
 }
 .marcasMobile {
     display: none;
+}
+/*select*/
+p::selection { 
+    background-color: #F8DD6C;
+}
+a::selection { 
+    background-color: #F8DD6C;
+}
+h1::selection { 
+    background-color: #F8DD6C;
+}
+h2::selection { 
+    background-color: #F8DD6C;
+}
+h3::selection { 
+    background-color: #F8DD6C;
+}
+h4::selection { 
+    background-color: #F8DD6C;
+}
+h5::selection { 
+    background-color: #F8DD6C;
+}
+img::selection { 
+    background-color: #F8DD6C;
+}
+label::selection { 
+    background-color: #F8DD6C;
 }

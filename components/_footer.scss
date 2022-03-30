@@ -1,15 +1,14 @@
+@import "../base/extends.scss";
+@import "../base/mixin";
+
 /*footer*/
 footer {
     position: relative;
-    background-color: #398175;
-    color: #F8DD6C;
+    @include colores (#398175,#F8DD6C);
     padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
     z-index: 1000;
-    
+    @extend %disposicion;
+        
     footer div ul {
         display: inline;
         margin: 0px !important;
@@ -22,7 +21,8 @@ footer {
     width: 50px;
     height: 50px;
     bottom: 0;
-    top: 100;
+    top: 90%;
     right: 0;
+    left: 93%;
     z-index: 999;
 }

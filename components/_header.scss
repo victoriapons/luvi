@@ -1,3 +1,5 @@
+@import "../base/maps";
+
 header nav ul li{
     display: inline;
     margin: 0.3rem;
@@ -6,10 +8,10 @@ header nav ul li{
     background-color: #398175 !important;
 }
 .fondoim-header {
-    background-image: url(../img/Sin-título-4.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-image: map-get($header, bg-image);
+    background-repeat: map-get($header, bg-repeat);
+    background-size: map-get($header, bg-size);
+    background-position: map-get($header, bg-position);
 }
 /*navbar*/
 

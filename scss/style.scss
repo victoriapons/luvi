@@ -3,6 +3,9 @@
 @import "../components/animaciones";
 @import "../components/grillas";
 @import "../components/estructura";
+@import "../base/extends";
+@import "../base/maps";
+@import "../base/mixin";
 
 * {
     margin: 0px;
@@ -14,7 +17,7 @@
 }
 
 /*mobile*/
-@media (min-width: 320px) and (max-width: 768px){
+@media (min-width: 0) and (max-width: 768px){
     .grid {
         justify-items: stretch;
     }
@@ -52,8 +55,18 @@
     }
     .marcasMobile {
         display: block;
-        width: fit-content;
+        width: 90%;
         height: fit-content;
+    }
+    .whatsapp{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 0;
+        top: 70%;
+        right: 0;
+        left: 85%;
+        z-index: 999;
     }
     }
     
@@ -79,6 +92,16 @@
     }
     .marcasMobile {
         display: none;
+    }
+    .whatsapp{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 0;
+        top: 75%;
+        right: 0;
+        left: 88%;
+        z-index: 999;
     }
     }
     
