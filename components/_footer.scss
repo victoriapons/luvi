@@ -1,17 +1,17 @@
 @import "../base/extends.scss";
-@import "../base/mixin";
+@import "../base/variables";
 
 /*footer*/
 footer {
     position: relative;
-    @include colores (#398175,#F8DD6C);
+    background-color: $color-ppal;
+    color: $color-secund;
     padding: 20px;
     z-index: 1000;
     @extend %disposicion;
         
     footer div ul {
         display: inline;
-        margin: 0px !important;
     }    
     
 

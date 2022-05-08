@@ -21,7 +21,7 @@
 <body class="font">
 <div class="fondoim-header">   
 <!---inicia header-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light transparente">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-modified">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html"><img src="./img/logo3.png" alt="logo" class="imgSizeLogo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,38 +30,62 @@
           <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
             <ul class="navbar-nav text-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link-modified" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/nosotras.html">Nosotras</a>
+                <a class="nav-link-modified" href="#nosotras">Nosotras</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                <a class="nav-link-modified" href="#servicios">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/portfolio.html">Portfolio</a>
+                <a class="nav-link-modified" href="./pages/portfolio.html">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                <a class="nav-link-modified" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
-<!--container grid-->
-  <div class="container-fluid">
-    <div class="row divPaddindg">
+<!--gif-->
+  <div class="divPaddindg text-align">
+    <h2 class="formulario-blanco"><strong>SOMOS ESTRATEGIA</strong></h2>
+  </div>
+</div>
+<!--sobre nosotras-->
+  <div class="container-fluid" id="nosotras">
+    <div class="row">
       <div class="col col-lg-6 col-md-12 col-12 divPaddindg">
-        <h1 class="formulario-blanco text-align animacion"><strong>ESTUDIO DE DISEÑO & COMUNICACIÓN</strong></h1>
-        <p class="textEspace formulario-blanco animacion">Vivimos en un mundo que se digitaliza cada vez más, por lo que es necesario seguir su ritmo. Desde nuestro estudio contribuimos enormemente a la imagen empresarial y el posicionamiento , ayudando a afianzar clientes y permitiend el crecimiento y desarrollo de tu emprendimiento o empresa.</p>
+        <h1 class="animacion color-marca"><strong>ESTUDIO DE DISEÑO & COMUNICACIÓN</strong></h1>
+        <p class="animacion">Vivimos en un mundo que se digitaliza cada vez más, por lo que es necesario seguir su ritmo. Diseñamos y desarrollamos identidades de marca únicas y soluciones digitales a medida.</p>
+        <img class="fotoMobile" src="./img/Frauen-Karriere-Deutschland.jpg" alt="nosotras">
+        <h2><h2>Lourdes & Victoria</h2></h2>
+        <p>Buscamos dar el 100% de nosotras en cada trabajo, conectando y empatizando con tu emprendimiento. Creemos fielmente que cada proyecto tiene una historia, valores, un corazón y sobre todo una persona detrás. Por eso es que tomamos con responsabilidad nuestro rol para con tu empresa.</p>
       </div>
-      <div class="col col-lg-6 col-md-12 col-12 divPaddindg text-align">
-        <p class="textEspace formulario-blanco animacion">Nuestros trabajo se basa en la mejora constante de los canales de comunicación y difusión, posibilitando la llegada y fidelización de nuevos clientes y abriendo las puertas a los mercados digitales.</p>
-        <p class="textEspace formulario-blanco animacion botonMargin">Diseñamos y desarrollamos identidades de marca únicas y soluciones digitales a medida. </p>
-        <a class="botones botonMargin divPaddindg" href="./pages/servicios.html">Nuestros Servicios</a>
-      </div>
+      <div class="col col-lg-6 col-md-12 col-12 text-align">
+        <img class="imageSize imageBorder fotoDesktop" src="./img/Frauen-Karriere-Deutschland.jpg" alt="nosotras">
+        <a class="botones divPaddindg divMargin" href="http://linkedin.com" target="blank">Luvi en LinkedIn</a>
+        <!--<div>
+          <p class="textEspace formulario-blanco animacion">Nuestros trabajo se basa en la mejora constante de los canales de comunicación y difusión, posibilitando la llegada y fidelización de nuevos clientes y abriendo las puertas a los mercados digitales.</p>
+        </div>
+        <div class="divMargin">
+          <a class="botones botonMargin divPaddindg" href="./pages/servicios.html">Nuestros Servicios</a>
+        </div>-->
+      </div> 
     </div>
   </div>
+<!--trabajos-->
+  <div class="container-fluid divMarginMobile" id="servicios">
+    <div class="row degradado">
+      <div class="col col-lg-6 col-md-12 col-12 divPaddindg">
+        <img class="imageSizeIcon" src="./img/curve.png" alt="Diseño de Identidad">
+        <h3>Branding</h3>
+        <p>Desarrollamos una identidad completa basada en los valores y fundamentos de la marca.</p>
+      </div>
+      <div class="col col-lg-6 col-md-12 col-12 no-margin">
+        <img class="imageSize" src="./img/dw-copia.png" alt="don worse">
+      </div>
 <!---arranca footer-->
         <footer>
             <div>
@@ -81,5 +105,7 @@
 </div>
 <!--js bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!--js propio-->
+<script src="./javascript/script.js"></script>
 </body>
 </html>

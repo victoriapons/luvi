@@ -1,3 +1,6 @@
+@import "../base/variables";
+
+/*generales*/
 .textEspace {
     text-align: center;
     line-height: 1.5rem;
@@ -17,31 +20,39 @@ ul {
     padding: 4rem;
 }
 .divMargin {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
-.container {
-    padding: 0% !important;
-    margin: 0% !important;
+.divMarginMobile {
+    margin-top: 0px;
+}
+/*flex*/
+.linea {
+    display: inline-block;
 }
 /*botones*/
 .botones {
-    border:3px solid #398175;
+    border:3px solid $color-ppal;
     border-radius: 15px;
     padding: 5px;
-    background-color: #398175;
+    background-color: $color-ppal;
 }
 .botonMargin {
     margin: 2rem;
 }
 /*tamaño img*/
 .imgSizeLogo {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 30%;
+}
+.imageSizeIcon {
+    max-width: 12%;
+    margin-bottom: 20px;
 }
 .imageSize {
-    height: 100%;
-    width: 100%;
+    width: 100%;   
+}
+.imageBorder {
+    margin-top: -40px;
+    border: 5px white solid;
 }
 .imgSizeIconos {
     width: 1rem;
@@ -59,18 +70,14 @@ ul {
     justify-content: space-between;    
 }
 .cajas {
-    height: 21rem;
-    text-align: center !important;
-    background-color: #F8DD6C;
+    width: 18rem;
+    background-color: $color-secund;
     border-radius: 5%;
     margin: 2rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.align-item {
-    justify-content: center !important;
 }
 
 /*formulario*/
@@ -80,7 +87,7 @@ label{
 	display:inline-block;
 }
 input {
-    background-color: #398175;
+    background-color: $color-ppal;
     border-radius: 15px;
     border-color: white;
     color: white;
@@ -95,24 +102,27 @@ input {
 }
 /*colores*/
 .color-marca {
-    color: #398175;
+    color: $color-ppal;
 }
 a {
     text-decoration: none;
     color: white;
 }
 a:hover {
-    color: #F8DD6C;
+    color: $color-secund;
 }
 
 .color-amarillo {
-    color: #F8DD6C;
+    color: $color-secund;
 }
 .backAmarillo {
-    background-color: #F8DD6C;
+    background-color: $color-secund;
 }
 .formulario-blanco {
     color: white;
+}
+.degradado {
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(248,221,108,1) 100%);
 }
 /*nosotras marcas*/
 .marcasDesktop {
@@ -122,31 +132,34 @@ a:hover {
 .marcasMobile {
     display: none;
 }
+.fotoMobile {
+    display: none;
+}
 /*contacto formulario select*/
 p::selection { 
-    background-color: #F8DD6C;
+    background-color: $color-secund;
 }
 a::selection { 
-    background-color: #F8DD6C;
+    background-color: $color-secund;
 }
 h1::selection { 
-    background-color: #F8DD6C;
+    background-color: $color-secund;
 }
 h2::selection { 
-    background-color: #F8DD6C;
+    background-color: $color-secund;
 }
 h3::selection { 
-    background-color: #F8DD6C;
+    background-color: $color-secund;
 }
 h4::selection { 
-    background-color: #F8DD6C;
+    background-color: $color-secund;
 }
 h5::selection { 
-    background-color: #F8DD6C;
+    background-color: $color-secund;
 }
 img::selection { 
-    background-color: #F8DD6C;
+    background-color: $color-secund;
 }
 label::selection { 
-    background-color: #F8DD6C;
+    background-color: $color-secund;
 }

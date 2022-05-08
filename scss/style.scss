@@ -1,11 +1,10 @@
 @import "../components/footer";
 @import "../components/header";
 @import "../components/animaciones";
-@import "../components/grillas";
 @import "../components/estructura";
 @import "../base/extends";
 @import "../base/maps";
-@import "../base/mixin";
+@import "../base/variables";
 
 * {
     margin: 0px;
@@ -43,7 +42,7 @@
         text-align: center;
     }
     #marcas {
-        background-color: #F8DD6C;
+        background-color: $color-secund;
         padding: 1rem;
     }
     #img {
@@ -54,9 +53,18 @@
         display: none;
     }
     .marcasMobile {
-        display: block;
-        width: 90%;
+        display: inline-flex;
+        width: 70%;
         height: fit-content;
+    }
+    .fotoDesktop {
+        display: none;
+    }
+    .fotoMobile {
+        display: inline-flex;
+        width: 100%;
+        height: fit-content;
+        align-items: center;
     }
     .whatsapp{
         position: fixed;
@@ -68,6 +76,19 @@
         left: 85%;
         z-index: 999;
     }
+    .botones {
+        padding: 3px;
+    }
+    #text-mobile {
+        color: white;
+    }
+    .imageSize {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .divMarginMobile {
+        margin-top: 40px;
+    }
     }
     
     /*tablet*/
@@ -78,7 +99,7 @@
     footer {
         display: flex;
         flex-direction: row;
-        justify-content: space-between
+        justify-content: space-between;
     }
     .divPaddindg {
         padding: 1rem;
@@ -93,6 +114,9 @@
     .marcasMobile {
         display: none;
     }
+    .fotoMobile {
+        display: none;
+    }
     .whatsapp{
         position: fixed;
         width: 50px;
@@ -102,6 +126,13 @@
         right: 0;
         left: 88%;
         z-index: 999;
+    }
+    .botones {
+        padding: 2px;
+    }
+    .imageSize {
+        width: 100%;
+        margin-top: 0px;
     }
     }
     

@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 /*agregando animaciones*/
 .cajas {
     transition: all 2s;
@@ -13,23 +15,23 @@ input {
     transition: all 1s;
 }
 input:focus {
-    background-color: #F8DD6C ;
+    background-color: $color-secund ;
 }
 .animacion:hover {
     animation: cambioColor 3s;
 }
 @keyframes cambioColor{
     0%{
-        color: white;
+        color: $color-ppal;
     }
     25%{
-        color: #398175;
+        color: $color-secund;
     }
     50%{
-        color: #F8DD6C;
+        color: black;
     }
     100%{
-        color: white;
+        color: $color-ppal;
     }
 
 }

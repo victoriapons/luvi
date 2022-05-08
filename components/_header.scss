@@ -5,7 +5,7 @@ header nav ul li{
     margin: 0.3rem;
 }
 .header{
-    background-color: #398175 !important;
+    background-color: $color-ppal;
 }
 .fondoim-header {
     background-image: map-get($header, bg-image);
@@ -15,15 +15,15 @@ header nav ul li{
 }
 /*navbar*/
 
-.transparente {
-    background-color: transparent !important;
+.navbar-modified {
+    background-color: transparent;
+
 }
-#navbarSupportedContent {
-    align-items: flex-end !important;
+.nav-link-modified{
+    color: white ;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.nav-link{
-    color: white !important;
-}
-.active {
-    color: #F8DD6C !important;
+.active-modified {
+    color: $color-secund;
 }
